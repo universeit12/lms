@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:lms/app/modules/all%20course/course_card.dart';
 import 'package:lms/app/modules/feedback/feedback_screen.dart';
 import '../../../../style/text_style.dart';
@@ -24,31 +23,31 @@ class HomeScreen extends StatelessWidget {
             Container(
               width: size.width,
               height: size.height / 4.5,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppColor.primary,
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 35),
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 35),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ///Custom Home AppBar...
-                  HomeAppBar(),
-                  SizedBox(height: 5.0),
+                  const HomeAppBar(),
+                  const SizedBox(height: 5.0),
 
                   ///Custom Slider...
-                  Slider1(),
+                  const Slider1(),
 
                   ///Free Course...
                   FreeCourseCard(),
-                  Divider(color: Colors.blueAccent),
-                  SizedBox(height: 10.0),
+                  const Divider(color: Colors.blueAccent),
+                  const SizedBox(height: 10.0),
 
                   ///Custom My Course...
-                  MyCourseCard(),
-                  Divider(color: Colors.blueAccent),
-                  SizedBox(height: 10),
+                  const MyCourseCard(),
+                  const Divider(color: Colors.blueAccent),
+                  const SizedBox(height: 10),
 
                   ///Custom Live Course...
                   Text(
@@ -57,9 +56,9 @@ class HomeScreen extends StatelessWidget {
                     style: AppTextStyle1(),
                   ),
 
-                  SizedBox(height: 10),
-                  CourseCard(),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 10),
+                  const CourseCard(),
+                  const SizedBox(height: 20),
 
                   /*       ///Custom Recorded Course...
                   CustomSeeAll(
@@ -71,9 +70,15 @@ class HomeScreen extends StatelessWidget {
                   RecordCourseCard(),*/
 
                   ///Teacher List
-                  TeacherCard(),
-                  SizedBox(height: 20),
-                  FeedbackScreen()
+                  const TeacherCard(),
+                  const SizedBox(height: 20),
+                  Text(
+                    textAlign: TextAlign.center,
+                    'Student Feedback',
+                    style: AppTextStyle1(),
+                  ),
+                  const SizedBox(height: 10),
+                  FeedbackCard()
                 ],
               ),
             ),

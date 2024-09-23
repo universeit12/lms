@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:lms/routes/app_route.dart';
 import 'package:lms/utils/app_config.dart';
 
-
 void main() async {
   /// Ensure Flutter bindings
   WidgetsFlutterBinding.ensureInitialized();
