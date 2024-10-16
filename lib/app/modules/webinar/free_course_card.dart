@@ -21,8 +21,8 @@ class FreeCourseCard extends StatelessWidget {
         ),
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
         decoration: BoxDecoration(
-            color: AppColor.primary,
-            border: Border.all(width: 0.1),
+            color: Colors.blueAccent.withOpacity(0.1),
+            border: Border.all(width: 0.1, color: Colors.black12),
             borderRadius: BorderRadius.circular(8.0)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -31,32 +31,29 @@ class FreeCourseCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Watch Free Webinar",
-                  style: TextStyle(
-                      color: AppColor.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
-                ),
+                Text("Watch Free Webinar",
+                    style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold)),
                 InkWell(
                   onTap: () => Get.to(() => FreeCourseDetails()),
                   child: Container(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 10.0, vertical: 5.0),
                     decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(10.0)),
-                    child: const Row(
+                        color: Colors.teal,
+                        borderRadius: BorderRadius.circular(4.0)),
+                    child: Row(
                       children: [
-                        Text(
-                          "Click Now",
-                          style: TextStyle(color: AppColor.white, fontSize: 16),
-                        ),
-                        Icon(
-                          Icons.arrow_forward,
-                          color: AppColor.white,
-                          size: 20.0,
-                        )
+                        Text("Click Now",
+                            style: TextStyle(
+                                color: AppColor.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold)),
+                        SizedBox(width: 5),
+                        Icon(Icons.arrow_forward,
+                            color: AppColor.white, size: 18.0)
                       ],
                     ),
                   ),

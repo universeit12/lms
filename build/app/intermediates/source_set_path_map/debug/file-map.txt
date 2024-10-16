@@ -1,48 +1,51 @@
-com.example.lms.app-swiperefreshlayout-1.1.0-0 C:\Users\Al Azad\.gradle\caches\transforms-3\0190aa2da7c680c826ffc5e7da1d955c\transformed\swiperefreshlayout-1.1.0\res
-com.example.lms.app-lifecycle-livedata-2.7.0-1 C:\Users\Al Azad\.gradle\caches\transforms-3\0313b4099446464f98d0df0606c58c95\transformed\lifecycle-livedata-2.7.0\res
-com.example.lms.app-jetified-core-1.0.0-2 C:\Users\Al Azad\.gradle\caches\transforms-3\052a56087b23de77791a629d260284c0\transformed\jetified-core-1.0.0\res
-com.example.lms.app-jetified-profileinstaller-1.3.1-3 C:\Users\Al Azad\.gradle\caches\transforms-3\166e5df34c1c015ef6ddeae137513a3f\transformed\jetified-profileinstaller-1.3.1\res
-com.example.lms.app-lifecycle-viewmodel-2.7.0-4 C:\Users\Al Azad\.gradle\caches\transforms-3\2e94595ca22e3aadcdebdc547820608c\transformed\lifecycle-viewmodel-2.7.0\res
-com.example.lms.app-jetified-datastore-1.0.0-5 C:\Users\Al Azad\.gradle\caches\transforms-3\3314cb25a5330f11bf2a55b7a9a310ab\transformed\jetified-datastore-1.0.0\res
-com.example.lms.app-appcompat-1.5.1-6 C:\Users\Al Azad\.gradle\caches\transforms-3\3608f7c6d888f312778bc80c5f908c4c\transformed\appcompat-1.5.1\res
-com.example.lms.app-jetified-emoji2-1.2.0-7 C:\Users\Al Azad\.gradle\caches\transforms-3\416b72c60f2871d1386ba3a79cb8bd10\transformed\jetified-emoji2-1.2.0\res
-com.example.lms.app-jetified-lifecycle-livedata-core-ktx-2.7.0-8 C:\Users\Al Azad\.gradle\caches\transforms-3\455c428e62a6dd75da98c7152f7af462\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
-com.example.lms.app-jetified-activity-1.8.1-9 C:\Users\Al Azad\.gradle\caches\transforms-3\4b07bb875192e8c29c9b76677237c5c8\transformed\jetified-activity-1.8.1\res
-com.example.lms.app-jetified-annotation-experimental-1.4.0-10 C:\Users\Al Azad\.gradle\caches\transforms-3\4d10c72f31024081b56fc5037069e011\transformed\jetified-annotation-experimental-1.4.0\res
-com.example.lms.app-jetified-startup-runtime-1.1.1-11 C:\Users\Al Azad\.gradle\caches\transforms-3\4ee1d1c3643bd699aea17aa2adbcb7ee\transformed\jetified-startup-runtime-1.1.1\res
-com.example.lms.app-jetified-appcompat-resources-1.5.1-12 C:\Users\Al Azad\.gradle\caches\transforms-3\51149cd37bdf129415e9642c8ee09052\transformed\jetified-appcompat-resources-1.5.1\res
-com.example.lms.app-jetified-window-java-1.2.0-13 C:\Users\Al Azad\.gradle\caches\transforms-3\5292c4072ce6d2ab49b0e25db445cdfe\transformed\jetified-window-java-1.2.0\res
-com.example.lms.app-jetified-emoji2-views-helper-1.2.0-14 C:\Users\Al Azad\.gradle\caches\transforms-3\5afc422476b50b65cb190cccfb7374f8\transformed\jetified-emoji2-views-helper-1.2.0\res
-com.example.lms.app-webkit-1.5.0-15 C:\Users\Al Azad\.gradle\caches\transforms-3\637012283144fa165be99f61cc46c41b\transformed\webkit-1.5.0\res
-com.example.lms.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-16 C:\Users\Al Azad\.gradle\caches\transforms-3\6e7c2231d2ac9b957ecfe9d432e59ed2\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
-com.example.lms.app-core-runtime-2.2.0-17 C:\Users\Al Azad\.gradle\caches\transforms-3\73778f1c206428361b6eebbb974be913\transformed\core-runtime-2.2.0\res
-com.example.lms.app-jetified-core-ktx-1.13.1-18 C:\Users\Al Azad\.gradle\caches\transforms-3\740c93e8e1043856a6b7cb15a7eaa9f0\transformed\jetified-core-ktx-1.13.1\res
-com.example.lms.app-jetified-media3-exoplayer-1.4.1-19 C:\Users\Al Azad\.gradle\caches\transforms-3\905903eaf3d3050bfc927bf162a1ec76\transformed\jetified-media3-exoplayer-1.4.1\res
-com.example.lms.app-lifecycle-runtime-2.7.0-20 C:\Users\Al Azad\.gradle\caches\transforms-3\98474e5913354eaede53aaa879a4dd8b\transformed\lifecycle-runtime-2.7.0\res
-com.example.lms.app-jetified-savedstate-1.2.1-21 C:\Users\Al Azad\.gradle\caches\transforms-3\aadceac8ee0316c01a9163bad1a5e0ed\transformed\jetified-savedstate-1.2.1\res
-com.example.lms.app-browser-1.8.0-22 C:\Users\Al Azad\.gradle\caches\transforms-3\b4e4ef13627bf6f9133e3fb4635c024f\transformed\browser-1.8.0\res
-com.example.lms.app-fragment-1.7.1-23 C:\Users\Al Azad\.gradle\caches\transforms-3\c683cde5b1f5377825fe27da54e1b718\transformed\fragment-1.7.1\res
-com.example.lms.app-jetified-datastore-preferences-1.0.0-24 C:\Users\Al Azad\.gradle\caches\transforms-3\cb38a9efa74695bcecf2cdc4810f475f\transformed\jetified-datastore-preferences-1.0.0\res
-com.example.lms.app-lifecycle-livedata-core-2.7.0-25 C:\Users\Al Azad\.gradle\caches\transforms-3\ce9e6112a0f9c5113844bb49506e7a06\transformed\lifecycle-livedata-core-2.7.0\res
-com.example.lms.app-jetified-window-1.2.0-26 C:\Users\Al Azad\.gradle\caches\transforms-3\d47b1192960df52846144d82ac9e1d6f\transformed\jetified-window-1.2.0\res
-com.example.lms.app-jetified-lifecycle-process-2.7.0-27 C:\Users\Al Azad\.gradle\caches\transforms-3\d674cd90e13def17f77b3f8010d35e09\transformed\jetified-lifecycle-process-2.7.0\res
-com.example.lms.app-jetified-tracing-1.2.0-28 C:\Users\Al Azad\.gradle\caches\transforms-3\e67a2d3f5080e81a9ca4ada76d6846fb\transformed\jetified-tracing-1.2.0\res
-com.example.lms.app-core-1.13.1-29 C:\Users\Al Azad\.gradle\caches\transforms-3\fac84cd5ecf1ec88a8c98571217c9350\transformed\core-1.13.1\res
-com.example.lms.app-debug-30 E:\lms\android\app\src\debug\res
-com.example.lms.app-main-31 E:\lms\android\app\src\main\res
-com.example.lms.app-pngs-32 E:\lms\build\app\generated\res\pngs\debug
-com.example.lms.app-resValues-33 E:\lms\build\app\generated\res\resValues\debug
-com.example.lms.app-rs-34 E:\lms\build\app\generated\res\rs\debug
-com.example.lms.app-mergeDebugResources-35 E:\lms\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.example.lms.app-mergeDebugResources-36 E:\lms\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.example.lms.app-merged_res-37 E:\lms\build\app\intermediates\merged_res\debug
-com.example.lms.app-packaged_res-38 E:\lms\build\connectivity_plus\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-39 E:\lms\build\flutter_inappwebview\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-40 E:\lms\build\flutter_keyboard_visibility\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-41 E:\lms\build\fluttertoast\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-42 E:\lms\build\package_info_plus\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-43 E:\lms\build\path_provider_android\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-44 E:\lms\build\shared_preferences_android\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-45 E:\lms\build\url_launcher_android\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-46 E:\lms\build\video_player_android\intermediates\packaged_res\debug
-com.example.lms.app-packaged_res-47 E:\lms\build\wakelock_plus\intermediates\packaged_res\debug
+com.example.lms.app-jetified-lifecycle-viewmodel-savedstate-2.7.0-0 C:\Users\Al Azad\.gradle\caches\transforms-3\0ffbdfcadb71e0a9d41ca802b28f6974\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.lms.app-lifecycle-livedata-core-2.7.0-1 C:\Users\Al Azad\.gradle\caches\transforms-3\1561fead4024f9b9cdee719f01bdb430\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.lms.app-jetified-core-1.0.0-2 C:\Users\Al Azad\.gradle\caches\transforms-3\1c5f6db43d131463afca7e0462ec6152\transformed\jetified-core-1.0.0\res
+com.example.lms.app-core-runtime-2.2.0-3 C:\Users\Al Azad\.gradle\caches\transforms-3\2874df0f81244a83e147dc16d9c51e26\transformed\core-runtime-2.2.0\res
+com.example.lms.app-jetified-emoji2-1.2.0-4 C:\Users\Al Azad\.gradle\caches\transforms-3\3195b35f0cc2f358e547df28afec7c53\transformed\jetified-emoji2-1.2.0\res
+com.example.lms.app-jetified-window-java-1.2.0-5 C:\Users\Al Azad\.gradle\caches\transforms-3\3ef162224f371787e5c8dc68312129f9\transformed\jetified-window-java-1.2.0\res
+com.example.lms.app-jetified-datastore-preferences-1.0.0-6 C:\Users\Al Azad\.gradle\caches\transforms-3\400149c275441aff33612cbedf89d0f3\transformed\jetified-datastore-preferences-1.0.0\res
+com.example.lms.app-browser-1.8.0-7 C:\Users\Al Azad\.gradle\caches\transforms-3\4bd76a0c32aabefcdfd355161b939ac5\transformed\browser-1.8.0\res
+com.example.lms.app-core-1.13.1-8 C:\Users\Al Azad\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\res
+com.example.lms.app-jetified-activity-1.9.1-9 C:\Users\Al Azad\.gradle\caches\transforms-3\598efeff9890275b032702599bd017d0\transformed\jetified-activity-1.9.1\res
+com.example.lms.app-swiperefreshlayout-1.1.0-10 C:\Users\Al Azad\.gradle\caches\transforms-3\62dfac66235f87093d23a0f3183ef95a\transformed\swiperefreshlayout-1.1.0\res
+com.example.lms.app-jetified-lifecycle-livedata-core-ktx-2.7.0-11 C:\Users\Al Azad\.gradle\caches\transforms-3\6da0e15fe277d03192fadf049fb88f55\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\res
+com.example.lms.app-jetified-profileinstaller-1.3.1-12 C:\Users\Al Azad\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\res
+com.example.lms.app-jetified-startup-runtime-1.1.1-13 C:\Users\Al Azad\.gradle\caches\transforms-3\72d73aa9f2b0d4a60d769cc82fe58f41\transformed\jetified-startup-runtime-1.1.1\res
+com.example.lms.app-lifecycle-viewmodel-2.7.0-14 C:\Users\Al Azad\.gradle\caches\transforms-3\7b93728c23c58fb4966a93fd781d42c6\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.lms.app-lifecycle-runtime-2.7.0-15 C:\Users\Al Azad\.gradle\caches\transforms-3\8968819bfcadfd25d9ed1488e55fb43d\transformed\lifecycle-runtime-2.7.0\res
+com.example.lms.app-fragment-1.7.1-16 C:\Users\Al Azad\.gradle\caches\transforms-3\902e93687bfec424d7d681c16d78dd10\transformed\fragment-1.7.1\res
+com.example.lms.app-jetified-core-ktx-1.13.1-17 C:\Users\Al Azad\.gradle\caches\transforms-3\a374ebd3eb9aca2cfd2e4d2ed2f0ed1b\transformed\jetified-core-ktx-1.13.1\res
+com.example.lms.app-jetified-window-1.2.0-18 C:\Users\Al Azad\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\res
+com.example.lms.app-jetified-tracing-1.2.0-19 C:\Users\Al Azad\.gradle\caches\transforms-3\b6393f1bc40143c1a43b027ef1bf8c49\transformed\jetified-tracing-1.2.0\res
+com.example.lms.app-jetified-annotation-experimental-1.4.0-20 C:\Users\Al Azad\.gradle\caches\transforms-3\bbfbfcd66d57b964cd3d944ae6910e1b\transformed\jetified-annotation-experimental-1.4.0\res
+com.example.lms.app-jetified-datastore-1.0.0-21 C:\Users\Al Azad\.gradle\caches\transforms-3\bff188d5b09622071b7a9fee42deea2c\transformed\jetified-datastore-1.0.0\res
+com.example.lms.app-lifecycle-livedata-2.7.0-22 C:\Users\Al Azad\.gradle\caches\transforms-3\c8104be4ee8049739ee8a5cef3e0da67\transformed\lifecycle-livedata-2.7.0\res
+com.example.lms.app-jetified-emoji2-views-helper-1.2.0-23 C:\Users\Al Azad\.gradle\caches\transforms-3\d564a6127bfb11ae703b643e96802627\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.example.lms.app-jetified-appcompat-resources-1.5.1-24 C:\Users\Al Azad\.gradle\caches\transforms-3\d6868c4c631cd628cb6941ec78dd7a5b\transformed\jetified-appcompat-resources-1.5.1\res
+com.example.lms.app-appcompat-1.5.1-25 C:\Users\Al Azad\.gradle\caches\transforms-3\d74b883c2e769e623fa17662f269211d\transformed\appcompat-1.5.1\res
+com.example.lms.app-jetified-savedstate-1.2.1-26 C:\Users\Al Azad\.gradle\caches\transforms-3\e31bf8eb61c587fe74f52284c4da4d09\transformed\jetified-savedstate-1.2.1\res
+com.example.lms.app-webkit-1.5.0-27 C:\Users\Al Azad\.gradle\caches\transforms-3\e73ab88012a2e7c81bbb8a95ca747597\transformed\webkit-1.5.0\res
+com.example.lms.app-jetified-lifecycle-process-2.7.0-28 C:\Users\Al Azad\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\res
+com.example.lms.app-jetified-media3-exoplayer-1.4.1-29 C:\Users\Al Azad\.gradle\caches\transforms-3\f6403bd67be0863a2447b00801240401\transformed\jetified-media3-exoplayer-1.4.1\res
+com.example.lms.app-debug-30 E:\Projects\StudioProjects\lms\android\app\src\debug\res
+com.example.lms.app-main-31 E:\Projects\StudioProjects\lms\android\app\src\main\res
+com.example.lms.app-pngs-32 E:\Projects\StudioProjects\lms\build\app\generated\res\pngs\debug
+com.example.lms.app-resValues-33 E:\Projects\StudioProjects\lms\build\app\generated\res\resValues\debug
+com.example.lms.app-rs-34 E:\Projects\StudioProjects\lms\build\app\generated\res\rs\debug
+com.example.lms.app-mergeDebugResources-35 E:\Projects\StudioProjects\lms\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.lms.app-mergeDebugResources-36 E:\Projects\StudioProjects\lms\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.lms.app-merged_res-37 E:\Projects\StudioProjects\lms\build\app\intermediates\merged_res\debug
+com.example.lms.app-packaged_res-38 E:\Projects\StudioProjects\lms\build\connectivity_plus\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-39 E:\Projects\StudioProjects\lms\build\flutter_inappwebview\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-40 E:\Projects\StudioProjects\lms\build\flutter_keyboard_visibility\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-41 E:\Projects\StudioProjects\lms\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-42 E:\Projects\StudioProjects\lms\build\fluttertoast\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-43 E:\Projects\StudioProjects\lms\build\image_picker_android\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-44 E:\Projects\StudioProjects\lms\build\package_info_plus\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-45 E:\Projects\StudioProjects\lms\build\path_provider_android\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-46 E:\Projects\StudioProjects\lms\build\permission_handler_android\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-47 E:\Projects\StudioProjects\lms\build\shared_preferences_android\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-48 E:\Projects\StudioProjects\lms\build\url_launcher_android\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-49 E:\Projects\StudioProjects\lms\build\video_player_android\intermediates\packaged_res\debug
+com.example.lms.app-packaged_res-50 E:\Projects\StudioProjects\lms\build\wakelock_plus\intermediates\packaged_res\debug

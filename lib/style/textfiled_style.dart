@@ -7,7 +7,7 @@ InputDecoration appInputDecoration({
 }) {
   return InputDecoration(
     hintText: hinttext ?? ' ',
-    prefixIcon: ontap != null
+    suffixIcon: ontap != null
         ? IconButton(
             onPressed: ontap,
             icon: Icon(prefixIcon),
@@ -15,11 +15,12 @@ InputDecoration appInputDecoration({
         : Icon(prefixIcon),
     filled: true,
     fillColor: Colors.white,
+    suffixIconColor: Colors.black54,
 
     // Enable border
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(14.0),
-      borderSide: const BorderSide(color: Colors.blue, width: 1),
+      borderSide: const BorderSide(color: Colors.grey, width: 0.3),
     ),
     // Focus border
     focusedBorder: OutlineInputBorder(

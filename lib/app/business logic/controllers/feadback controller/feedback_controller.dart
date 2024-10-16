@@ -17,8 +17,7 @@ class FeedbackController extends GetxController {
   void fetchFeedback() async {
     try {
       isLoading(true);
-      final response =
-          await http.get(Uri.parse("${appAPI.baseUrl}${appAPI.feedbackUrl}"));
+      final response = await http.get(Uri.parse("$baseUrl$feedbackUrl"));
       if (response.statusCode == 200) {
         var model = FeedbackModel.fromJson(json.decode(response.body));
         feedbackList.value = model.data ?? [];

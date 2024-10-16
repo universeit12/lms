@@ -4,16 +4,14 @@ import '../../../business logic/controllers/nav controller/bottom_controller.dar
 
 class BottomNavScreen extends StatelessWidget {
   BottomNavScreen({super.key});
-  final BottomNavController bottomNavController =
-      Get.put(BottomNavController());
+  final controller = Get.put(BottomNavController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Obx(() =>
-          bottomNavController.pages[bottomNavController.selectedIndex.value]),
+      body: Obx(() => controller.pages[controller.selectedIndex.value]),
       bottomNavigationBar: Obx(() => BottomNavigationBar(
-            currentIndex: bottomNavController.selectedIndex.value,
+            currentIndex: controller.selectedIndex.value,
             elevation: 50,
             iconSize: 30.0,
             selectedItemColor: Colors.blueAccent,
@@ -21,7 +19,7 @@ class BottomNavScreen extends StatelessWidget {
             unselectedItemColor: Colors.black54,
             showUnselectedLabels: true,
             onTap: (index) {
-              bottomNavController.changeIndex(index);
+              controller.changeIndex(index);
             },
             items: const [
               BottomNavigationBarItem(
@@ -37,13 +35,14 @@ class BottomNavScreen extends StatelessWidget {
                 label: 'Join Class',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.videocam_outlined),
-                activeIcon: Icon(Icons.videocam),
-                label: 'Recording',
+                icon: Icon(Icons.source),
+                activeIcon: Icon(Icons.source),
+                label: 'My Course',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.menu),
-                label: 'More',
+                icon: Icon(Icons.person_outline),
+                activeIcon: Icon(Icons.person),
+                label: 'Profile',
               ),
             ],
           )),

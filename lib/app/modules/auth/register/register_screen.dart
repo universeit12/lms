@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:lms/app/modules/auth/register/student_signup.dart';
+import 'package:lms/app/modules/auth/register/teacher_signup.dart';
 import '../../../../style/text_style.dart';
-import '../../../../style/textfiled_style.dart';
 import '../../../../utils/app_image.dart';
-import '../../../../utils/input_validation.dart';
-import '../../../../widgets/appRichText.dart';
-import '../../../../widgets/app_button.dart';
 import '../../../business logic/controllers/auth controller/register_controller.dart';
-import '../Login/login_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
   RegisterScreen({super.key});
@@ -17,111 +14,42 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0),
-          child: Center(
-            child: SingleChildScrollView(
-              physics: const AlwaysScrollableScrollPhysics(),
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  /// Header Section
-                  Image.asset(
-                    AppImage.appLogo,
-                    width: size.width / 3,
-                  ),
+                  Image.asset(AppImage.appLogo, width: size.width / 2.5),
                   SizedBox(height: 5.h),
                   Text('Register Now!', style: AppTextStyle1()),
-                  SizedBox(
-                    height: 30.h,
+                  SizedBox(height: 30.h),
+                  const TabBar(
+                      isScrollable: true,
+                      labelStyle: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                      tabAlignment: TabAlignment.start,
+                      labelPadding: EdgeInsets.symmetric(horizontal: 20),
+                      dividerColor: Colors.transparent,
+                      unselectedLabelColor: Colors.grey,
+                      indicatorColor: Colors.blue,
+                      tabs: [
+                        Tab(text: "Student"),
+                        Tab(text: "Teacher"),
+                      ]),
+                  const SizedBox(
+                    height: 15,
                   ),
-
-                  ///Register FormField...
-                  Form(
-                    key: controller.globalKey,
-                    child: Column(
-                      children: [
-                        TextFormField(
-                          decoration: appInputDecoration(
-                              hinttext: 'First Name', prefixIcon: Icons.person),
-                          validator: InputValidator.validateUsername,
-                          onChanged: (value) {
-                            controller.firstName.value = value;
-                          },
-                        ),
-                        SizedBox(height: 15.h),
-                        TextFormField(
-                          decoration: appInputDecoration(
-                              hinttext: 'Last Name', prefixIcon: Icons.person),
-                          validator: InputValidator.validateUsername,
-                          onChanged: (value) {
-                            controller.lastName.value = value;
-                          },
-                        ),
-                        SizedBox(height: 15.h),
-                        TextFormField(
-                          decoration: appInputDecoration(
-                              hinttext: 'Your Email', prefixIcon: Icons.email),
-                          validator: InputValidator.validateEmail,
-                          onChanged: (value) {
-                            controller.email.value = value;
-                            controller.createUsername(value);
-                          },
-                        ),
-                        SizedBox(height: 15.h),
-                        Obx(() {
-                          return TextFormField(
-                            obscureText: controller.isObscure.value,
-                            decoration: appInputDecoration(
-                                hinttext: 'Your Password',
-                                prefixIcon: controller.isObscure.value
-                                    ? Icons.visibility
-                                    : Icons.visibility_off,
-                                ontap: () => controller.toggleObscureText()),
-                            validator: InputValidator.validatePassword,
-                            onChanged: (value) {
-                              controller.password.value = value;
-                            },
-                          );
-                        }),
-                        SizedBox(height: 15.h),
-                        Obx(() {
-                          return TextFormField(
-                            obscureText: controller.isObscure.value,
-                            decoration: appInputDecoration(
-                                hinttext: 'Re-type Your Password',
-                                prefixIcon: controller.isObscure.value
-                                    ? Icons.visibility
-                                    : Icons.visibility_off,
-                                ontap: () => controller.toggleObscureText()),
-                            validator: InputValidator.validatePassword,
-                            onChanged: (value) {
-                              controller.confirmPassword.value = value;
-                            },
-                          );
-                        }),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 20.h),
-
-                  /// Login Button...
-                  Obx(() => AppButton(
-                        text: "Register",
-                        isLoading: controller.isLoading.value,
-                        onTap: () {
-                          if (controller.globalKey.currentState!.validate()) {
-                            controller.register();
-                          }
-                        },
-                      )),
-
-                  /// Login Account Button...
-                  Apprichtext(
-                      text2: 'Log In',
-                      ontap: () => Get.offAll(() => LoginScreen()))
+                  Flexible(
+                      flex: 1,
+                      child: TabBarView(
+                          children: [StudentSignup(), TeacherSignup()]))
                 ],
               ),
             ),

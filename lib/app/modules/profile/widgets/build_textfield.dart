@@ -11,11 +11,11 @@ Widget buildTextField({
   return TextField(
     maxLines: maxLines,
     controller: TextEditingController(text: initialValue),
-    readOnly: readOnly??false,
+    readOnly: readOnly ?? false,
     decoration: InputDecoration(
       hintText: hintText,
       prefixIcon: prefixIcon,
-      labelStyle: TextStyle(color: Colors.grey[800]),
+      labelStyle: TextStyle(color: Colors.grey[700]),
       filled: true,
       fillColor: Colors.white,
       enabledBorder: OutlineInputBorder(
@@ -24,10 +24,10 @@ Widget buildTextField({
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(15),
-        borderSide: BorderSide(color: Colors.blueAccent, width: 2),
+        borderSide: const BorderSide(color: Colors.blueAccent, width: 2),
       ),
     ),
-    style: TextStyle(color: Colors.black),
+    style: const TextStyle(color: Colors.black),
     onChanged: onChanged,
   );
 }

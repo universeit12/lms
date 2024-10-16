@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lms/app/modules/all%20course/course_card.dart';
 import 'package:lms/app/modules/feedback/feedback_screen.dart';
-import '../../../../style/text_style.dart';
+import 'package:lms/app/modules/footer/custom_footer.dart';
+import 'package:lms/app/modules/successfull%20student/successfull_student_card.dart';
 import '../../../../utils/colors.dart';
 import '../../enroll course/widgets/my_course_card.dart';
 import '../../webinar/free_course_card.dart';
@@ -14,74 +15,48 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-
     return Scaffold(
+      backgroundColor: AppColor.bgColor,
       body: SingleChildScrollView(
-        child: Stack(
+        child: Column(
           children: [
-            Container(
-              width: size.width,
-              height: size.height / 4.5,
-              decoration: const BoxDecoration(
-                color: AppColor.primary,
-              ),
-            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 35),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ///Custom Home AppBar...
-                  const HomeAppBar(),
-                  const SizedBox(height: 5.0),
+                  const HomeHeader(),
+                  const SizedBox(height: 15),
 
                   ///Custom Slider...
                   const Slider1(),
+                  const SizedBox(height: 20.0),
 
                   ///Free Course...
                   FreeCourseCard(),
-                  const Divider(color: Colors.blueAccent),
-                  const SizedBox(height: 10.0),
+                  const SizedBox(height: 20.0),
 
-                  ///Custom My Course...
+                  ///my course card...
                   const MyCourseCard(),
-                  const Divider(color: Colors.blueAccent),
-                  const SizedBox(height: 10),
-
-                  ///Custom Live Course...
-                  Text(
-                    textAlign: TextAlign.center,
-                    'Top Course',
-                    style: AppTextStyle1(),
-                  ),
-
-                  const SizedBox(height: 10),
-                  const CourseCard(),
                   const SizedBox(height: 20),
 
-                  /*       ///Custom Recorded Course...
-                  CustomSeeAll(
-                    title: 'Recorded Courses',
-                    color: Colors.green,
-                    ontap: () => Get.to(() => ClassJoin()),
-                  ),
-                  SizedBox(height: 10),
-                  RecordCourseCard(),*/
+                  ///all course card...
+                  CourseCard(),
+                  const SizedBox(height: 20),
 
                   ///Teacher List
-                  const TeacherCard(),
+                   TeacherCard(),
                   const SizedBox(height: 20),
-                  Text(
-                    textAlign: TextAlign.center,
-                    'Student Feedback',
-                    style: AppTextStyle1(),
-                  ),
-                  const SizedBox(height: 10),
-                  FeedbackCard()
+
+                  FeedbackCard(),
+                  const SizedBox(height: 20),
+                  SuccessfullStudentCard()
                 ],
               ),
             ),
+            const SizedBox(height: 20),
+            CustomFooter()
           ],
         ),
       ),

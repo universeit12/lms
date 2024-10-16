@@ -24,9 +24,7 @@ class TeacherListScreen extends StatelessWidget {
                   for (int i = 0; i < teacherUtils.length; i++)
                     InkWell(
                       onTap: () {
-                        Get.to(() => TeacherDetails(
-                              data: teacherUtils[i],
-                            ));
+                        Get.to(() => TeacherDetails());
                       },
                       child: Container(
                           height: 80,

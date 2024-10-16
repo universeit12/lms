@@ -13,7 +13,7 @@ void AppDialog(BuildContext context, child, titlle, subtitle, ontap) {
         ),
         elevation: 20,
         child: Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           width: double.infinity,
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -21,7 +21,7 @@ void AppDialog(BuildContext context, child, titlle, subtitle, ontap) {
               Container(
                   width: 80,
                   height: 80,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     gradient: LinearGradient(
                       colors: [Colors.redAccent, Colors.amber],
@@ -30,32 +30,32 @@ void AppDialog(BuildContext context, child, titlle, subtitle, ontap) {
                     ),
                   ),
                   child: child),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Text(
                 titlle,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: Colors.black87,
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
                 subtitle,
                 style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.grey[700],
-                  height: 1.5,
-                ),
+                    fontSize: 14,
+                    color: Colors.grey[700],
+                    height: 1.5,
+                    fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   TextButton(
                     style: TextButton.styleFrom(),
-                    child: Text(
+                    child: const Text(
                       'Cancel',
                       style: TextStyle(
                         fontSize: 16,
@@ -65,7 +65,7 @@ void AppDialog(BuildContext context, child, titlle, subtitle, ontap) {
                       Navigator.of(context).pop();
                     },
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   AppButton(text: 'Logout', onTap: ontap),
                 ],
               ),

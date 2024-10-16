@@ -1,95 +1,90 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lms/app/business%20logic/controllers/teacher/teacher_controller.dart';
 import 'package:lms/style/text_style.dart';
-import '../../../../utils/app_icon.dart';
+import '../../../../widgets/custom_see_all.dart';
 import 'teacher_details.dart';
 import '../utils/teacher_utils.dart';
 
 class TeacherCard extends StatelessWidget {
-  const TeacherCard({super.key});
-
+  TeacherCard({super.key});
+  final controller = Get.put(TeacherController());
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Column(
       children: [
-        SizedBox(height: 20.0),
-        Text(
-          'Our expert instructor',
-          style: AppTextStyle1(),
-        ),
-        Text(
-          textAlign: TextAlign.center,
-          'They efficiently serve large number of students on our platform',
-          style: AppTextStyle2(fontSize: 12),
-        ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              for (int i = 0; i < teacherUtils.length; i++)
-                InkWell(
-                  onTap: () {
-                    Get.to(() => TeacherDetails(
-                          data: teacherUtils[i],
-                        ));
-                  },
-                  child: Container(
-                      height: 230,
-                      width: 170.0,
-                      clipBehavior: Clip.antiAlias,
-                      alignment: Alignment.bottomCenter,
-                      margin: const EdgeInsets.only(
-                          bottom: 10.0, top: 15, right: 10.0),
-                      decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.9),
-                          border: Border.all(width: 0.1),
-                          borderRadius: BorderRadius.circular(8.0),
-                          image: DecorationImage(
-                              image: AssetImage(teacherUtils[i]['image']),
-                              fit: BoxFit.cover)),
-                      child: Container(
-                        height: 80,
-                        width: double.infinity,
-                        color: Colors.black54,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Column(
+        ///Header Title.....
+        const SizedBox(height: 20.0),
+        controller.teacherList.isNotEmpty
+            ? const CustomSeeAll(
+                title: 'Our Expert Instructor',
+                viewall: '',
+              )
+            : const SizedBox(),
+        const SizedBox(height: 10),
+
+        ///Teacher Card....
+        Obx(() {
+          if (controller.isLoading.value) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          final data = controller.teacherList;
+          return SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                for (int i = 0; i < data.length; i++)
+                  InkWell(
+                    onTap: () {
+                      Get.to(() => TeacherDetails());
+                    },
+                    child: Container(
+                        height: size.height / 3.5,
+                        width: size.width / 2.4,
+                        clipBehavior: Clip.antiAlias,
+                        alignment: Alignment.bottomCenter,
+                        margin:
+                            const EdgeInsets.only(bottom: 10.0, right: 15.0),
+                        decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.9),
+                            borderRadius: BorderRadius.circular(8.0),
+                            image: DecorationImage(
+                                image: NetworkImage(data[i].instructorImg ??
+                                    'assets/images/error.png'),
+                                fit: BoxFit.cover)),
+                        child: Container(
+                          width: double.infinity,
+                          height: size.height / 14,
+                          color: Colors.black54,
+                          child: Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Text(
-                                  teacherUtils[i]['name'],
-                                  style: const TextStyle(color: Colors.white),
-                                ),
-                                Text(
-                                  teacherUtils[i]['position'],
-                                  style: const TextStyle(
-                                      color: Colors.white70, fontSize: 10.0),
+                                Column(
+                                  children: [
+                                    Text(data[i].instructorName ?? '',
+                                        overflow: TextOverflow.ellipsis,
+                                        style: AppTextStyle1()),
+                                    Text(
+                                      data[i].instructorRole ?? '',
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(
+                                          color: Colors.white70,
+                                          fontSize: 10.0),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  AppIcon.fb,
-                                  height: 25,
-                                  width: 25,
-                                ),
-                                const SizedBox(width: 10.0),
-                                Image.asset(
-                                  AppIcon.insta,
-                                  height: 25,
-                                  width: 25,
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      )),
-                )
-            ],
-          ),
-        )
+                          ),
+                        )),
+                  )
+              ],
+            ),
+          );
+        })
       ],
     );
   }

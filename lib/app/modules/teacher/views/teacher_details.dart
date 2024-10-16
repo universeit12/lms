@@ -4,16 +4,18 @@ import 'package:readmore/readmore.dart';
 import '../../../../style/text_style.dart';
 import '../../../../widgets/app_button.dart';
 import '../../../../widgets/backappbar.dart';
+
 class TeacherDetails extends StatelessWidget {
-  final data;
-  const TeacherDetails({super.key, this.data});
+  const TeacherDetails({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return Scaffold(
       appBar: Backappbar(
-        title: '${data['name']}- profile',
+        title: 'Azad - profile',
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
@@ -37,7 +39,7 @@ class TeacherDetails extends StatelessWidget {
                             borderRadius: BorderRadius.circular(6.0),
                           ),
                           child: Image.asset(
-                            data['image'],
+                            'assets/images/error.png',
                             height: 100.0,
                             width: screenSize.width / 4,
                             fit: BoxFit.cover,
@@ -50,12 +52,12 @@ class TeacherDetails extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(data['name'], style: AppTextStyle1()),
-                            Text(data['position'],
+                            Text('fkajd', style: AppTextStyle1()),
+                            Text('fsadjkfklj',
                                 style: AppTextStyle2(
                                     textColor: Colors.blueAccent)),
                             Text(
-                              data['skill'],
+                              'flkadsjf',
                               overflow: TextOverflow.ellipsis,
                               style: const TextStyle(
                                   fontSize: 11, color: Colors.black54),

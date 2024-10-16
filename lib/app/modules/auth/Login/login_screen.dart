@@ -74,7 +74,7 @@ class LoginScreen extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerRight,
                     child: InkWell(
-                        onTap: () => Get.offAll(() => ForgetScreen()),
+                        onTap: () => Get.offAll(() => const ForgetScreen()),
                         child: Text('Forget password?',
                             style: AppTextStyle2(textColor: Colors.blue))),
                   ),
@@ -94,7 +94,8 @@ class LoginScreen extends StatelessWidget {
                   /// Don't Hava an account...
                   Apprichtext(
                       text2: 'Register',
-                      ontap: () => Get.offAll(() => RegisterScreen()))
+                      ontap: () => Get.offAll(() => RegisterScreen())),
+                  SizedBox(height: 35.h),
                 ],
               ),
             ),

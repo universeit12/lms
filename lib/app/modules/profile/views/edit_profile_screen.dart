@@ -1,77 +1,80 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../../style/textfiled_style.dart';
 import '../../../../utils/app_config.dart';
 import '../../../../widgets/app_button.dart';
+import '../../../business logic/controllers/profile controller/profile_controller.dart';
 import '../../../business logic/controllers/profile controller/profile_edit_controller.dart';
-import '../widgets/build_textfield.dart';
 
 class EditProfileScreen extends StatelessWidget {
-  final controller = Get.put(EditProfileController());
+  EditProfileScreen({super.key});
+  final editcontroller = Get.put(EditProfileController());
+  final controller = Get.put(ProfileController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
-      body: Stack(
-        children: [
-          SingleChildScrollView(
+        backgroundColor: Colors.white,
+        appBar: AppBar(backgroundColor: Colors.transparent, elevation: 0),
+        body: RefreshIndicator(onRefresh: () async {
+          await editcontroller.refreshAccessToken();
+        }, child: Obx(() {
+          final data = controller.profileData.value;
+          return SingleChildScrollView(
             padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 60,
                   backgroundImage: AssetImage(AppConfig.appImage),
                 ),
-                SizedBox(height: 20),
-                // Name Field
-                buildTextField(
-                  hintText: 'Name',
-                  prefixIcon: Icon(Icons.person),
-                  initialValue: controller.userName.value,
-                  onChanged: (value) => controller.updateName(value),
+                const SizedBox(height: 20),
+                TextFormField(
+                  initialValue: data.firstName ?? '',
+                  decoration: appInputDecoration(
+                      hinttext: 'First Name', prefixIcon: Icons.person_outline),
+                  onChanged: (value) {
+                    editcontroller.firstName.value = value;
+                  },
                 ),
-                SizedBox(height: 20),
-                // Email Field
-                buildTextField(
-                  hintText: 'Email',
+                const SizedBox(height: 20),
+                TextFormField(
+                  initialValue: data.lastName ?? '',
+                  decoration: appInputDecoration(
+                      hinttext: 'Last Name', prefixIcon: Icons.person_outline),
+                  onChanged: (value) {
+                    editcontroller.lastName.value = value;
+                  },
+                ),
+                const SizedBox(height: 20),
+                TextFormField(
+                  initialValue: data.username ?? '',
+                  decoration: appInputDecoration(
+                      hinttext: 'User name',
+                      prefixIcon: Icons.drive_file_rename_outline),
+                  onChanged: (value) {
+                    editcontroller.username.value = value;
+                  },
+                ),
+                const SizedBox(height: 20),
+                TextFormField(
                   readOnly: true,
-                  prefixIcon: Icon(Icons.email),
-                  initialValue: controller.userEmail.value,
-                  onChanged: (value) => controller.updateEmail(value),
+                  initialValue: data.email ?? '',
+                  decoration: appInputDecoration(
+                      hinttext: 'Email', prefixIcon: Icons.email),
+                  onChanged: (value) {},
                 ),
-                SizedBox(height: 20),
-                // Phone Field
-                buildTextField(
-                  hintText: 'Phone',
-                  prefixIcon: Icon(Icons.phone),
-                  initialValue: controller.userPhone.value,
-                  onChanged: (value) => controller.updatePhone(value),
-                ),
-                SizedBox(height: 20),
-                // Bio Field
-                buildTextField(
-                  hintText: 'Bio',
-                  initialValue: controller.userBio.value,
-                  maxLines: 3,
-                  onChanged: (value) => controller.updateBio(value),
-                ),
-                SizedBox(height: 30),
+                const SizedBox(height: 20),
                 AppButton(
                   text: 'Save Changes',
                   onTap: () {
-                    Get.back();
+                    editcontroller.updateProfile();
                   },
                 ),
               ],
             ),
-          ),
-        ],
-      ),
-    );
+          );
+        })));
   }
 }

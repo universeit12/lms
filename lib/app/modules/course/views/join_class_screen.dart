@@ -5,6 +5,7 @@ import '../../../../widgets/small_button.dart';
 import '../../home/widgets/home_appbar.dart';
 
 
+
 class ClassJoin extends StatelessWidget {
   const ClassJoin({super.key});
 
@@ -24,7 +25,7 @@ class ClassJoin extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppColor.primary,
             ),
-            child: HomeAppBar(),
+            child: HomeHeader(),
           ),
           for (int i = 0; i < 5; i++)
             Padding(

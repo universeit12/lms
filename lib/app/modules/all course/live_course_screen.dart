@@ -14,8 +14,8 @@ class LiveCourseScreen extends StatelessWidget {
         appBar: Backappbar(
           title: data['title'],
         ),
-        body: const Padding(
-          padding: EdgeInsets.all(15.0),
+        body: Padding(
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             children: [
               Wrap(

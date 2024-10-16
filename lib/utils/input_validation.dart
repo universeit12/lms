@@ -27,7 +27,7 @@ class InputValidator {
     if (value == null || value.isEmpty) {
       return 'Please enter your username';
     }
-    if (value.length < 3) {
+    if (value.length < 2) {
       return 'Username must be at least 3 characters long';
     }
     return null;

@@ -4,7 +4,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../modules/bottom nav/views/bottom_nav_screen.dart';
 
-
 class SplashController extends GetxController {
   @override
   void onInit() {
